@@ -41,7 +41,7 @@ This project leverages complex T-SQL techniques to solve non-trivial reporting p
 └── README.md                         # Project documentation
 
 ---
-
+```
 
 ## 🛡️ License
 
