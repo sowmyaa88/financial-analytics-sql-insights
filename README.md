@@ -31,16 +31,22 @@ This project leverages complex T-SQL techniques to solve non-trivial reporting p
 ## 📂 Repository Structure
 
 ```text
-.
-├── scripts/
-│   ├── 01_exploratory_analysis.sql   # Initial schema exploration & row-level audit
-│   ├── 02_financial_kpis.sql          # MoM growth, cumulative totals, & revenue views
-│   ├── 03_customer_segmentation.sql  # RFM modeling & customer lifetime analysis
-│   └── 04_cohort_retention.sql        # Time-series cohort matrix generation
-├── docs/                             # Data dictionary & business rule documentation
-└── README.md                         # Project documentation
 
----
+scripts/
+├── 00_init_database.sql          # Database initialization & schema setup
+├── 01_database_exploration.sql   # Data profiling & record-level auditing
+├── 02_dimensions_exploration.sql # Dimensional attribute mapping & category counts
+├── 03_date_range_exploration.sql # Time-series boundaries & period coverage
+├── 04_measures_exploration.sql   # Core quantitative metrics & aggregate checks
+├── 05_magnitude_analysis.sql     # Volume, size, and distribution metrics
+├── 06_ranking_analysis.sql       # Top/Bottom performance benchmarking
+├── 07_change_over_time_analysis.sql # Period-over-Period & MoM growth trends
+├── 08_cumulative_analysis.sql    # Running totals & cumulative financial metrics
+├── 09_performance_analysis.sql   # Operational targets vs. actual performance
+├── 10_data_segmentation.sql      # RFM modeling & customer group profiling
+├── 11_part_to_whole_analysis.sql # Share of total, Pareto, & ratio analyses
+├── 12_report_customers.sql       # Gold-layer views for customer reporting
+└── 13_report_products.sql        # Gold-layer views for product reporting
 ```
 
 ## 🛡️ License
